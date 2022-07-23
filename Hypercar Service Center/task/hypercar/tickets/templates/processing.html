@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Change oil queue: {{ x }} </div>
+<div>Inflate tires queue: {{ y }} </div>
+<div>Get diagnostic queue: {{ z }}</div>
+
+<form method="post">{% csrf_token %}
+  <a href="http://127.0.0.1:8000/next"<button type="submit">Process next</button></a>
+</form>
+
+</body>
+</html>
